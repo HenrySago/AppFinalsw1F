@@ -1,0 +1,45 @@
+<resources >
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textTituloExraGrande">25sp</dimen>
+    <dimen name="textTituloGrande">23sp</dimen>
+    <dimen name="textTitulo">20sp</dimen>
+    <dimen name="textParrafoGrande">17sp</dimen>
+    <dimen name="textParrafo">15sp</dimen>
+    <dimen name="textParrafoPequeno">12sp</dimen>
+    <dimen name="textPequeño">10sp</dimen>
+    <dimen name="textMuyPequeño">8sp</dimen>
+    <dimen name="textExtraPequeño">7sp</dimen>
+
+    <dimen name="textMediano">25sp</dimen>
+    <dimen name="textGrande">30sp</dimen>
+    <dimen name="textMuyGrande">35sp</dimen>
+
+
+    <dimen name="paddingStartButton">2dp</dimen>
+    <dimen name="paddingEndButton">2dp</dimen>
+
+
+    <dimen name="paddingButtonIconLeft">30dp</dimen>
+    <dimen name="heightButton">45dp</dimen>
+    <dimen name="heightButtonPequeño">25dp</dimen>
+    <dimen name="heightButtonMediano">30dp</dimen>
+    <dimen name="heightButtonMedianoConSombra">35dp</dimen>
+    <dimen name="heightButtonGrande">50dp</dimen>
+    <dimen name="heightButtonGrandeConSombra">55dp</dimen>
+    <dimen name="heightButtonMuyGrande">60dp</dimen>
+
+    <dimen name="heightToolBar">50dp</dimen>
+    <dimen name="layoutMarginLeft">20dp</dimen>
+    <dimen name="layoutMarginRight">20dp</dimen>
+    <dimen name="heightEditText">45dp</dimen>
+
+    <dimen name="layoutMarginTopEditText">10dp</dimen>
+    <dimen name="spacingDrawable">15dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/layoutMarginLeft"
+        android:layout_marginRight="@dimen/layoutMarginRight"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/tv_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo electrónico"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo" />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightEditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <EditText
+                android:id="@+id/et_correo"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:drawableEnd="@drawable/ic_correo"
+                android:hint="Correo electrónico"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingHorizontal="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo"
+            android:layout_marginTop="@dimen/layoutMarginTopEditText"
+            />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightEditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:drawableEnd="@drawable/ic_ojo"
+                android:hint="Contraseña"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:paddingHorizontal="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightButton"
+            android:layout_gravity="center"
+            android:layout_marginVertical="35dp"
+            android:background="@drawable/button_plumb_dark"
+            android:gravity="center"
+            android:textSize="@dimen/textParrafo"
+            android:text="Iniciar sesion"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_olvide_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightButton"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/layoutMarginLeft"
+        android:layout_marginRight="@dimen/layoutMarginRight"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_secondary"
+        android:gravity="center"
+        android:text="Olvide mi contraseña"
+        android:textSize="@dimen/textParrafo"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>
+
+

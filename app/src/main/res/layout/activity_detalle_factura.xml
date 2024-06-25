@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_barra"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightToolBar"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_bar_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/textParrafoGrande"
+            android:textColor="@color/colorBlack" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layoutMarginLeft"
+        android:layout_marginRight="@dimen/layoutMarginRight"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Factura"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textTituloGrande" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/tv_titulo_consumo_lecturado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="Consumo lecturado"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_consumo_lecturado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="10300 m3"
+                android:gravity="end"
+                android:textColor="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_titulo_consumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="Consumo real"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_consumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="10300 m3"
+                android:gravity="end"
+                android:textColor="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_titulo_costo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:text="Costo"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_costo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="2dp"
+                android:text="120 Bs"
+                android:gravity="end"
+                android:textColor="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_titulo_facturacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Cliente"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo" />
+
+        <TextView
+            android:id="@+id/tv_nit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Nit"
+            android:textColor="@color/colorPlumbDark"
+            android:textSize="@dimen/textParrafo" />
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Nombre"
+            android:textColor="@color/colorPlumbDark"
+            android:textSize="@dimen/textParrafo" />
+        <TextView
+            android:id="@+id/tv_titulo_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Dirección"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo" />
+
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="Nombre completo"
+            android:textColor="@color/colorPlumbDark"
+            android:textSize="@dimen/textParrafo" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+

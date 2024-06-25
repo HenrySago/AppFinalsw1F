@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_barra"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightToolBar"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_bar_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/textParrafoGrande"
+            android:textColor="@color/colorBlack" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            >
+            <ImageView
+                android:id="@+id/iv_camara"
+                android:layout_width="240dp"
+                android:layout_height="350dp"
+                android:src="@drawable/ic_camara"
+                />
+            <Button
+                android:id="@+id/btn_abrir_camara"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightButtonMedianoConSombra"
+                android:background="@drawable/button_secondary"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Abrir camara"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textParrafo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/layoutMarginTopEditText"
+            android:layout_marginVertical="@dimen/layoutMarginTopEditText"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_verificar_datos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightButtonMedianoConSombra"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_primary"
+                android:text="Verificar datos"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textParrafo" />
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightButtonMedianoConSombra"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_secondary"
+                android:text="Cancelar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textParrafo" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+

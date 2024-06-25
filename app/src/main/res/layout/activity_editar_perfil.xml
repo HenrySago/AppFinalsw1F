@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_barra"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightToolBar"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_bar_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/textParrafoGrande"
+            android:textColor="@color/colorBlack" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layoutMarginLeft"
+        android:layout_marginRight="@dimen/layoutMarginRight"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_titulo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto de perfil"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <ImageView
+               android:id="@+id/iv_perfil"
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:layout_marginVertical="15dp"
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_marginEnd="30dp"
+               >
+               <ImageView
+                   android:id="@+id/iv_camara"
+                   android:layout_width="90dp"
+                   android:layout_height="90dp"
+                   android:src="@drawable/ic_camara"
+                   android:layout_marginVertical="15dp"
+                   />
+               <Button
+                   android:id="@+id/btn_abrir_camara"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/heightButtonPequeño"
+                   android:background="@drawable/button_secondary"
+                   android:paddingLeft="20dp"
+                   android:paddingRight="20dp"
+                   android:text="Abrir camara"
+                   android:textAllCaps="false"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="@dimen/textParrafo" />
+           </LinearLayout>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombres"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo" />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightEditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <EditText
+                android:id="@+id/et_nombres"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:drawableEnd="@drawable/ic_user"
+                android:hint="Nombres"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:paddingHorizontal="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellidos"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textParrafo"
+            android:layout_marginTop="@dimen/layoutMarginTopEditText"
+            />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightEditText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <EditText
+                android:id="@+id/et_apellidos"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:drawableEnd="@drawable/ic_user"
+                android:hint="Apellidos"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:paddingHorizontal="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorPlumbDark"
+                android:textSize="@dimen/textParrafo" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/ll_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_nit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nit"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textParrafo"
+                android:layout_marginTop="@dimen/layoutMarginTopEditText"
+                />
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="18dp"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="false"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_nit"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTransparent"
+                    android:drawableEnd="@drawable/ic_nit"
+                    android:hint="Nit"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:paddingHorizontal="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorPlumbDark"
+                    android:textSize="@dimen/textParrafo" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_nombres_factura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombres de la factura"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textParrafo"
+                android:layout_marginTop="@dimen/layoutMarginTopEditText"
+                />
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightEditText"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="18dp"
+                card_view:cardElevation="5dp"
+                card_view:cardUseCompatPadding="false"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_nombres_factura"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTransparent"
+                    android:drawableEnd="@drawable/ic_user"
+                    android:hint="Nombres de la factura"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:paddingHorizontal="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorPlumbDark"
+                    android:textSize="@dimen/textParrafo" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_primary"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Actualizar perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textParrafo" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

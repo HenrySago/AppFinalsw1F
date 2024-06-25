@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorPlumb</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    <style name="TextLabel" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/textParrafo</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+        <item name="colorControlHighlight">@color/colorBlack</item>
+    </style>
+
+
+    <style name="PopTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/PopTheme1</item>
+    </style>
+
+    <style name="PopTheme1">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="SideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/SideTheme1</item>
+    </style>
+
+    <style name="SideTheme1">
+        <item name="android:windowEnterAnimation">@anim/side_in</item>
+        <item name="android:windowExitAnimation">@anim/side_out</item>
+    </style>
+
+    <style name="SlideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/SlideTheme1</item>
+    </style>
+
+    <style name="SlideTheme1">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:background">@color/colorPlumb</item>
+    </style>
+
+    <style name="menu_text_style" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextInputLsyout_Error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textPequeño</item>
+    </style>
+
+    <style name="TextInputLsyout_Hint" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textParrafoPequeno</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+    <style name="pdfView_text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/textParrafoGrande</item>
+    </style>
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Light">
+        <item name="pdfView_backIcon">@drawable/ic_icon_atras</item>
+        <item name="pdfView_downloadIcon">@drawable/ic_arrow_down_download</item>
+        <item name="pdfView_actionBarTint">@color/colorWhite</item>
+        <item name="pdfView_downloadIconTint">@color/colorPrimary</item>
+        <item name="pdfView_titleTextStyle">@style/pdfView_text</item>
+    </style>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_barra"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightToolBar"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_bar_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/textParrafoGrande"
+            android:textColor="@color/colorBlack" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </fragment>
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/layoutMarginTopEditText"
+            android:layout_marginVertical="@dimen/layoutMarginTopEditText"
+            app:cardCornerRadius="2dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/heightButtonPequeño"
+                android:layout_marginVertical="@dimen/heightButtonPequeño"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_titulo_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Cliente"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textParrafo" />
+
+                <TextView
+                    android:id="@+id/tv_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Nombre completo"
+                    android:textColor="@color/colorPlumbDark"
+                    android:textSize="@dimen/textParrafo" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Dirección"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textParrafo" />
+
+                <TextView
+                    android:id="@+id/tv_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Nombre completo"
+                    android:textColor="@color/colorPlumbDark"
+                    android:textSize="@dimen/textParrafo" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_referencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Referencia"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textParrafo" />
+
+                <TextView
+                    android:id="@+id/tv_referencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="Número de celular"
+                    android:textColor="@color/colorPlumbDark"
+                    android:textSize="@dimen/textParrafo" />
+
+                <Button
+                    android:id="@+id/btn_lecturar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightButtonMedianoConSombra"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_primary"
+                    android:text="Lecturar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textParrafo" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
